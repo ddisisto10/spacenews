@@ -3,14 +3,13 @@
 
 ## Descripción
 
-SpaceNews es una aplicación Android moderna que proporciona las últimas noticias e información sobre el espacio, misiones espaciales, descubrimientos astronómicos y avances tecnológicos en la exploración espacial. La aplicación consume una API REST para obtener artículos actualizados sobre el espacio y los presenta en una interfaz de usuario intuitiva y atractiva.
+SpaceNews es una aplicación Android que proporciona las últimas noticias e información sobre el espacio, misiones espaciales, descubrimientos astronómicos y avances tecnológicos en la exploración espacial. La aplicación consume una API REST para obtener artículos actualizados sobre el espacio y los presenta en una interfaz de usuario intuitiva y atractiva.
 
 ## Características
 
 - **Listado de Noticias Paginado**: Visualización eficiente de artículos con carga paginada.
 - **Búsqueda de Artículos**: Filtrado de noticias por términos de búsqueda.
 - **Detalles de Artículos**: Vista detallada de cada noticia con información completa.
-- **Interfaz Moderna**: Diseño atractivo siguiendo los principios de Material Design.
 - **Experiencia de Usuario Fluida**: Transiciones suaves y estados de carga informativos.
 
 ## Arquitectura
@@ -51,33 +50,6 @@ La aplicación está construida siguiendo los principios de Clean Architecture y
 - **Coil**: Para la carga eficiente de imágenes.
 - **Jetpack Compose**: Para algunas vistas modernas (implementación parcial).
 
-## Estructura del Proyecto
-
-```
-app/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/spacenews/
-│   │   │   ├── data/
-│   │   │   │   ├── model/
-│   │   │   │   ├── network/
-│   │   │   │   ├── paging/
-│   │   │   │   └── Repository.kt
-│   │   │   ├── domain/
-│   │   │   │   └── usecases/
-│   │   │   ├── ui/
-│   │   │   │   ├── Base/
-│   │   │   │   ├── Home/
-│   │   │   │   │   ├── Adapter/
-│   │   │   │   │   ├── HomeFragment.kt
-│   │   │   │   │   └── HomeViewModel.kt
-│   │   │   │   └── Detail/
-│   │   │   └── di/
-│   │   └── res/
-│   └── test/
-└── build.gradle
-```
-
 ## Implementación de Paginación
 
 La aplicación utiliza la biblioteca Paging 3 de Android Jetpack para implementar la carga paginada de artículos, lo que mejora significativamente el rendimiento y la experiencia del usuario al:
@@ -92,13 +64,3 @@ La aplicación utiliza la biblioteca Paging 3 de Android Jetpack para implementa
 - Android 8.0 (API 26) o superior
 - Conexión a Internet para obtener los datos más recientes
 
-## Configuración del Proyecto
-
-1. Clona el repositorio
-2. Abre el proyecto en Android Studio
-3. Sincroniza el proyecto con los archivos Gradle
-4. Ejecuta la aplicación en un emulador o dispositivo físico
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
